@@ -97,7 +97,15 @@
         .nav-tabs .nav-link.active {
             color: #000;
         }
-
+        @media (max-width: 576px) {
+            .jumbotron h1 {
+                font-size: 2rem; /* スマホサイズでフォントサイズを小さくする */
+            }
+            body {
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -139,12 +147,12 @@
     <div class="container mt-4">
         <div class="jumbotron p-6 p-md-5 text-white rounded">
             <div class="col-md-8 mx-auto px-0">
-                <h1 class="display-4">ようこそ、24sanサーバーへ！</h1>
+                <h1 class="display-5">ようこそ<br>24sanサーバへ！</h1>
                 <p class="lead my-3">以下のボタンから参加できます。</p>
-                <p class="lead mb-0">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-3">
                     <a href="#" id="copy-minecraft" class="btn btn-primary btn-lg text-white">マイクラに参加</a>
                     <a href="#" class="btn btn-secondary btn-lg text-white">discordに参加</a>
-                </p>
+                </div>
                 <h2 class="mt-5">サーバー情報</h2>
                 <div class="row mt-3">
                     <div class="col-md-6">
