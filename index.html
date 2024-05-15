@@ -21,6 +21,7 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            margin: auto;
         }
         a[href^="http"]:after,
         a[href^="//"]:after {
@@ -76,15 +77,18 @@
             font-size: 1.2em;
             color: #ccc;
         }
+        .tab-content{
+            min-height: 500px;
+        }
         .footer {
+            margin: auto;
             background-color: #141414;
             color: #bbb;
             padding: 20px 0;
             text-align: center;
             width: 100%;
-            position: relative;
-            bottom: 0;
-            flex-shrink: 0;
+            position:absolute;
+
         }
         .footer a {
             color: #bbb;
@@ -110,7 +114,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
     
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <a class="navbar-brand" href="#">24san</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -311,7 +315,7 @@
     </div>
 
     <footer class="footer">
-        <div class="container">
+        <div class=" container">
             <div class="row">
                 <div class="col-12">
                     <a href="#">プライバシーポリシー</a>
